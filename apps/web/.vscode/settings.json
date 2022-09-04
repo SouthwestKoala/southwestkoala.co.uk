@@ -1,0 +1,11 @@
+{
+	"cssvar.files": [
+		"./node_modules/open-props/postcss/style",
+		"./node_modules/open-props/postcss/normalize"
+	],
+	"cssvar.ignore": [],
+	"cssvar.extensions": ["css", "postcss", "svelte"],
+	"cssvar.themes": ["light", "dark"],
+	"cssvar.enableColors": true,
+	"cssvar.enableHover": true
+}

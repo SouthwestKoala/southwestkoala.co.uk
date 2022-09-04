@@ -1,0 +1,11 @@
+const { AUTH_KEY, NETLIFY_DEV, SANITY_DATASET, SANITY_PROJECT_ID, SANITY_TOKEN } = process.env as {
+	AUTH_KEY: string;
+	NETLIFY_DEV: string;
+	SANITY_DATASET: string;
+	SANITY_PROJECT_ID: string;
+	SANITY_TOKEN: string;
+};
+
+const DEV = NETLIFY_DEV === 'true';
+
+export { AUTH_KEY, DEV, SANITY_DATASET, SANITY_PROJECT_ID, SANITY_TOKEN };

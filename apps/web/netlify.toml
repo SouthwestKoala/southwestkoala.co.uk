@@ -1,0 +1,16 @@
+[build]
+  base = "apps/web/"
+  command = "npx pnpm install --store=node_modules/.pnpm-store && pnpm -w run build"
+  publish = "build/"
+
+[build.environment]
+  NPM_FLAGS = "--version"
+
+[functions]
+  directory = "api/"
+  node_bundler = "esbuild"
+
+[[redirect]]
+  from = "/api/pages/*"
+  to = "/.netlify/builders/page"
+  status = 200
